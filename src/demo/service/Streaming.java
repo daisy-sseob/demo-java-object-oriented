@@ -8,5 +8,5 @@ public interface Streaming {
 
 	List<Video> provideVideo();
 
-	void playVideo();
+	void playVideo(Video video);
 }

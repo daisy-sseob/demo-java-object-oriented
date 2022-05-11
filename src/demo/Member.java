@@ -7,6 +7,13 @@ public class Member {
 	private Grade grade;
 	private int age;
 
+	public Member(Long id, String username, Grade grade, int age) {
+		this.id = id;
+		this.username = username;
+		this.grade = grade;
+		this.age = age;
+	}
+
 	public Long getId() {
 		return id;
 	}

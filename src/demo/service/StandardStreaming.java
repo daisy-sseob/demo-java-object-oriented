@@ -1,5 +1,7 @@
 package demo.service;
 
+import demo.Member;
+
 public interface StandardStreaming extends Streaming {
-	void upGradeMember();
+	Member upGradeMember(Member member);
 }
