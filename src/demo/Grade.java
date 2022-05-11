@@ -1,7 +1,7 @@
 package demo;
 
-import demo.service.PremiumStreamingService;
-import demo.service.StandardStreamingService;
+import demo.service.provider.PremiumStreamingService;
+import demo.service.provider.StandardStreamingService;
 import demo.service.Streaming;
 
 import java.util.function.Supplier;

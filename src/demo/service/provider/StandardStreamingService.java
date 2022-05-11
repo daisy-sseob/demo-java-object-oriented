@@ -1,13 +1,14 @@
-package demo.service;
+package demo.service.provider;
 
 import demo.Grade;
 import demo.Member;
 import demo.Video;
+import demo.service.StandardStreaming;
 
 import java.util.Arrays;
 import java.util.List;
 
-public class StandardStreamingService implements StandardStreaming{
+public class StandardStreamingService implements StandardStreaming {
 
 	@Override
 	public Member upGradeMember(Member member) {

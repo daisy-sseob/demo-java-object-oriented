@@ -1,11 +1,12 @@
-package demo.service;
+package demo.service.provider;
 
 import demo.Video;
+import demo.service.PremiumStreaming;
 
 import java.util.Arrays;
 import java.util.List;
 
-public class PremiumStreamingService implements PremiumStreaming{
+public class PremiumStreamingService implements PremiumStreaming {
 
 	@Override
 	public List<Video> provideVideo() {

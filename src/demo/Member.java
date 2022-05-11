@@ -12,6 +12,7 @@ public class Member {
 		this.username = username;
 		this.grade = grade;
 		this.age = age;
+		
 	}
 
 	public Long getId() {

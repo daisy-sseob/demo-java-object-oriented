@@ -1,7 +1,7 @@
 package demo;
 
-import demo.service.PremiumStreamingService;
-import demo.service.StandardStreamingService;
+import demo.service.provider.PremiumStreamingService;
+import demo.service.provider.StandardStreamingService;
 import demo.service.Streaming;
 
 import java.util.List;
@@ -12,8 +12,8 @@ public class DemoMain {
 
 		final DemoMain demoMain = new DemoMain();
 
-		Member premiumMember = new Member(1L, "sseob", Grade.PREMIUM, 29);
-		Member standardMember = new Member(2L, "현섭", Grade.STANDARD, 19);
+		Member premiumMember = new Member(1L, "프리미엄 회원", Grade.PREMIUM, 29);
+		Member standardMember = new Member(2L, "스탠다드 회원", Grade.STANDARD, 19);
 		
 		System.out.println("================= case 1 =================");
 		demoMain.provideVideoByGrade(premiumMember)
