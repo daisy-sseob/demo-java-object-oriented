@@ -1,4 +1,6 @@
-package demo;
+package demo.member.entity;
+
+import demo.streaming.enm.Grade;
 
 public class Member {
 

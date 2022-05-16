@@ -1,8 +1,8 @@
-package demo;
+package demo.streaming.enm;
 
-import demo.service.provider.PremiumStreamingService;
-import demo.service.provider.StandardStreamingService;
-import demo.service.Streaming;
+import demo.streaming.service.PremiumStreamingService;
+import demo.streaming.service.StandardStreamingService;
+import demo.streaming.service.Streaming;
 
 import java.util.function.Supplier;
 

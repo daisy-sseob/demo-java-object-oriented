@@ -1,6 +1,6 @@
-package demo.service;
+package demo.streaming.service;
 
-import demo.Video;
+import demo.streaming.entity.Video;
 
 import java.util.List;
 

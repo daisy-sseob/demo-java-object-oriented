@@ -1,4 +1,4 @@
-package demo;
+package demo.streaming.entity;
 
 public class Video {
 	
