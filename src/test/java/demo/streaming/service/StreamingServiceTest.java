@@ -27,9 +27,6 @@ class StreamingServiceTest {
 	@DisplayName("스탠다드 등급을 처리하는 스트리밍 Service 클래스를 제공 받아 처리하는 것을 테스트")
 	@Test
 	public void standardGradeStreamingTest() {
-		
-		System.out.println(Grade.STANDARD.nextGrade());
-		
 		final List<Video> videos = streamingServiceLocator.resolve(Grade.STANDARD).provideVideo();
 		assertEquals(1, videos.size());
 	}
