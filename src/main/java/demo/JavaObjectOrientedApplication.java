@@ -1,5 +1,6 @@
 package demo;
 
+import org.springframework.boot.SpringApplication;
 import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
@@ -8,8 +9,6 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 public class JavaObjectOrientedApplication {
 
 	public static void main(String[] args) {
-		new SpringApplicationBuilder(JavaObjectOrientedApplication.class)
-				.web(WebApplicationType.SERVLET)
-				.run(args);
+		SpringApplication.run(JavaObjectOrientedApplication.class, args);
 	}
 }

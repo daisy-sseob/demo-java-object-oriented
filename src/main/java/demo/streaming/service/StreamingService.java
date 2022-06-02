@@ -4,8 +4,7 @@ import demo.streaming.entity.Video;
 
 import java.util.List;
 
-public interface Streaming {
-
+public interface StreamingService extends GradeSupportable {
 	List<Video> provideVideo();
 
 	void playVideo(Video video);

@@ -1,9 +1,18 @@
 package demo.streaming.enm;
 
-import org.springframework.stereotype.Component;
+import demo.exception.MaximumGradeException;
+import demo.streaming.service.GradeSupportable;
 
-@Component
+import java.util.Arrays;
+
 public enum Grade {
 	STANDARD,
-	PREMIUM
+	PREMIUM;
+	
+	public Grade nextGrade() {
+		return Arrays.stream(Grade.values())
+				.filter(grade -> grade.ordinal() > ordinal())
+				.findFirst()
+				.orElseThrow(() -> new MaximumGradeException(name()));
+	}
 }
