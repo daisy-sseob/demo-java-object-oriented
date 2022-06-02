@@ -1,10 +1,12 @@
 package demo.streaming.service;
 
 import demo.streaming.entity.Video;
+import org.springframework.stereotype.Service;
 
 import java.util.Arrays;
 import java.util.List;
 
+@Service
 public class PremiumStreamingService implements Streaming {
 
 	@Override

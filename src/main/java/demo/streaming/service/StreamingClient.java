@@ -9,8 +9,9 @@ import java.util.List;
 public class StreamingClient {
 
 	public List<Video> provideVideoByGrade(Member member) {
-		final Streaming streamingObject = member.getGrade().getStreamingObject();
-		return streamingObject.provideVideo();
+//		final Streaming streamingObject = member.getGrade().getStreamingObject();
+//		return streamingObject.provideVideo();
+		return null;
 	}
 	
 	public List<Video> provideVideoByGrade2(Member member) {

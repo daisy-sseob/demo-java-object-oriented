@@ -9,7 +9,7 @@ public class JavaObjectOrientedApplication {
 
 	public static void main(String[] args) {
 		new SpringApplicationBuilder(JavaObjectOrientedApplication.class)
-				.web(WebApplicationType.NONE)
+				.web(WebApplicationType.SERVLET)
 				.run(args);
 	}
 }

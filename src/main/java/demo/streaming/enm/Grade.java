@@ -1,22 +1,9 @@
 package demo.streaming.enm;
 
-import demo.streaming.service.PremiumStreamingService;
-import demo.streaming.service.StandardStreamingService;
-import demo.streaming.service.Streaming;
+import org.springframework.stereotype.Component;
 
-import java.util.function.Supplier;
-
+@Component
 public enum Grade {
-	STANDARD(StandardStreamingService::new),
-	PREMIUM(PremiumStreamingService::new);
-
-	private Supplier<Streaming> supplier;
-	
-	Grade(Supplier<Streaming> supplier) {
-		this.supplier = supplier;
-	}
-
-	public Streaming getStreamingObject() {
-		return supplier.get();
-	}
+	STANDARD,
+	PREMIUM
 }
